@@ -34,7 +34,7 @@
         <p class="menu-heading">MAIN MENU</p>
 
         <a href="dashboard.jsp" class="active">Dashboard</a>
-        <a href="#">Members</a>
+        <a href="../MemberListServlet">Members</a>
         <a href="#">Maintenance</a>
         <a href="#">Complaints</a>
         <a href="#">Notices</a>
