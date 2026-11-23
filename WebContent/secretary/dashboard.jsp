@@ -42,7 +42,7 @@
         <a href="#">Cleaning Staff</a>
 
         <div class="sidebar-footer">
-            <a href="../login.jsp">Logout</a>
+            <a href="../LogoutServlet">Logout</a>
         </div>
 
     </aside>
