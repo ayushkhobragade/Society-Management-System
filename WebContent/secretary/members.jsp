@@ -58,6 +58,18 @@
             padding: 7px 12px;
             text-decoration: none;
             border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .delete-btn {
+            background: #dc3545;
+            color: white;
+            padding: 7px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
         }
 
         .back-btn {
@@ -101,9 +113,23 @@
 
             <td>
                 <a class="edit-btn"
-   href="<%= request.getContextPath() %>/MemberEditPageServlet?id=<%= member.get("member_id") %>">
-    Edit
-</a>
+                   href="<%= request.getContextPath() %>/MemberEditPageServlet?id=<%= member.get("member_id") %>">
+                    Edit
+                </a>
+
+                <form action="<%= request.getContextPath() %>/MemberDeleteServlet"
+                      method="post"
+                      style="display:inline;"
+                      onsubmit="return confirm('Are you sure you want to delete this member?');">
+
+                    <input type="hidden"
+                           name="member_id"
+                           value="<%= member.get("member_id") %>">
+
+                    <button type="submit" class="delete-btn">
+                        Delete
+                    </button>
+                </form>
             </td>
         </tr>
 
