@@ -1,3 +1,4 @@
+
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Map" %>
 
@@ -51,7 +52,15 @@
             background: #f2f5fa;
         }
 
-        a {
+        .edit-btn {
+            background: #243b64;
+            color: white;
+            padding: 7px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .back-btn {
             display: inline-block;
             margin-top: 20px;
             color: #243b64;
@@ -73,6 +82,7 @@
             <th>Email</th>
             <th>Joining Date</th>
             <th>Status</th>
+            <th>Action</th>
         </tr>
 
         <%
@@ -88,6 +98,13 @@
             <td><%= member.get("email") == null ? "-" : member.get("email") %></td>
             <td><%= member.get("joining_date") == null ? "-" : member.get("joining_date") %></td>
             <td><%= member.get("status") %></td>
+
+            <td>
+                <a class="edit-btn"
+   href="<%= request.getContextPath() %>/MemberEditPageServlet?id=<%= member.get("member_id") %>">
+    Edit
+</a>
+            </td>
         </tr>
 
         <%
@@ -96,7 +113,7 @@
         %>
 
         <tr>
-            <td colspan="7">No members found.</td>
+            <td colspan="8">No members found.</td>
         </tr>
 
         <%
@@ -105,7 +122,9 @@
 
     </table>
 
-    <a href="dashboard.jsp">← Back to Dashboard</a>
+    <a class="back-btn" href="dashboard.jsp">
+        ← Back to Dashboard
+    </a>
 
 </body>
 </html>
