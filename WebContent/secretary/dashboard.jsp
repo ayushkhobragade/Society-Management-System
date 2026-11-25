@@ -37,7 +37,7 @@
         <a href="../MemberListServlet">Members</a>
         <a href="#">Maintenance</a>
         <a href="#">Complaints</a>
-        <a href="#">Notices</a>
+        <a href="../NoticeListServlet">Notices</a>
         <a href="#">Visitors</a>
         <a href="#">Cleaning Staff</a>
 
@@ -83,6 +83,7 @@
                 <div class="dashboard-card">
                     <h3>Notices</h3>
                     <p>Create and Manage Notices</p>
+                    <a href="../NoticeListServlet">Open Notices</a>
                 </div>
 
                 <div class="dashboard-card">

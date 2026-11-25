@@ -114,9 +114,9 @@
 
     </table>
 
-    <a class="back-btn" href="dashboard.jsp">
-        ← Back to Dashboard
-    </a>
+    <a class="back-btn" href="<%= request.getContextPath() %>/secretary/dashboard.jsp">
+    ← Back to Dashboard
+</a>
 
 </body>
 </html>
