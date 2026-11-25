@@ -119,8 +119,18 @@
     <h2>Society Portal</h2>
 
     <a href="dashboard.jsp">Dashboard</a>
-    <a href="<%= request.getContextPath() %>/MemberNoticeListServlet">Notices</a>
-    <a href="<%= request.getContextPath() %>/LogoutServlet">Logout</a>
+
+    <a href="<%= request.getContextPath() %>/MemberNoticeListServlet">
+        Notices
+    </a>
+
+    <a href="<%= request.getContextPath() %>/MemberMaintenanceServlet">
+        Maintenance
+    </a>
+
+    <a href="<%= request.getContextPath() %>/LogoutServlet">
+        Logout
+    </a>
 </div>
 
 <div class="main">
@@ -135,6 +145,7 @@
         <div class="card">
             <h3>Society Notices</h3>
             <p>View the latest notices published by the society secretary.</p>
+
             <a href="<%= request.getContextPath() %>/MemberNoticeListServlet">
                 View Notices
             </a>
@@ -143,7 +154,10 @@
         <div class="card">
             <h3>Maintenance Details</h3>
             <p>View your society maintenance charges and payment details.</p>
-            <span class="coming">Coming Soon</span>
+
+            <a href="<%= request.getContextPath() %>/MemberMaintenanceServlet">
+                View Maintenance
+            </a>
         </div>
 
         <div class="card">

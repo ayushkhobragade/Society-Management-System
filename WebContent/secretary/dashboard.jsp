@@ -35,7 +35,7 @@
 
         <a href="dashboard.jsp" class="active">Dashboard</a>
         <a href="../MemberListServlet">Members</a>
-        <a href="#">Maintenance</a>
+        <a href="../MaintenancePageServlet">Maintenance</a>
         <a href="#">Complaints</a>
         <a href="../NoticeListServlet">Notices</a>
         <a href="#">Visitors</a>
@@ -73,6 +73,9 @@
                 <div class="dashboard-card">
                     <h3>Maintenance</h3>
                     <p>Manage Maintenance Charges</p>
+                    <a href="../MaintenancePageServlet">
+                        Open Maintenance
+                    </a>
                 </div>
 
                 <div class="dashboard-card">
