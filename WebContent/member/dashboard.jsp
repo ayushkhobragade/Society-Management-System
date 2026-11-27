@@ -128,6 +128,14 @@
         Maintenance
     </a>
 
+    <a href="<%= request.getContextPath() %>/member/complaint.jsp">
+        Submit Complaint
+    </a>
+
+    <a href="<%= request.getContextPath() %>/MemberComplaintsServlet">
+        My Complaints
+    </a>
+
     <a href="<%= request.getContextPath() %>/LogoutServlet">
         Logout
     </a>
@@ -157,6 +165,24 @@
 
             <a href="<%= request.getContextPath() %>/MemberMaintenanceServlet">
                 View Maintenance
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Submit Complaint</h3>
+            <p>Submit a new complaint to the society secretary.</p>
+
+            <a href="<%= request.getContextPath() %>/member/complaint.jsp">
+                Submit Complaint
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>My Complaints</h3>
+            <p>View your submitted complaints and their current status.</p>
+
+            <a href="<%= request.getContextPath() %>/MemberComplaintsServlet">
+                View My Complaints
             </a>
         </div>
 
