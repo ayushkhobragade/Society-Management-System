@@ -40,6 +40,7 @@
         <a href="../NoticeListServlet">Notices</a>
         <a href="#">Visitors</a>
         <a href="../CleaningStaffListServlet">Cleaning Staff</a>
+        <a href="../SocietyReportsServlet">Society Reports</a>
 
         <div class="sidebar-footer">
             <a href="../LogoutServlet">Logout</a>
@@ -106,6 +107,15 @@
 
                     <a href="../CleaningStaffListServlet">
                         View Staff Records
+                    </a>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Society Reports</h3>
+                    <p>View Society Statistics and Reports</p>
+
+                    <a href="../SocietyReportsServlet">
+                        Open Reports
                     </a>
                 </div>
 
