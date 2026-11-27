@@ -39,7 +39,7 @@
         <a href="#">Complaints</a>
         <a href="../NoticeListServlet">Notices</a>
         <a href="#">Visitors</a>
-        <a href="#">Cleaning Staff</a>
+        <a href="../CleaningStaffListServlet">Cleaning Staff</a>
 
         <div class="sidebar-footer">
             <a href="../LogoutServlet">Logout</a>
@@ -97,6 +97,16 @@
                 <div class="dashboard-card">
                     <h3>Cleaning Staff</h3>
                     <p>Manage Staff Information</p>
+
+                    <a href="cleaning-staff-add.jsp">
+                        Add Cleaning Staff
+                    </a>
+
+                    <br><br>
+
+                    <a href="../CleaningStaffListServlet">
+                        View Staff Records
+                    </a>
                 </div>
 
             </div>
